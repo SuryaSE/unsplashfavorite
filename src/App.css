@@ -5,16 +5,36 @@
 .App-logo {
   height: 40vmin;
 }
+.logo{
+  width: 100px;
+}
+.favorite{
+  width: 100%;
+    max-height: 224px;
+    object-fit: cover;
+}
+.btnup{
+  top: 0px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.addCard:hover .btnup{
+  visibility: visible;
+  opacity: 1;
+  top: 20px;
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(3, 3, 3);
 }
 
 .App-link {
